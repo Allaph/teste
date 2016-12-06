@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_bike"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/toolbar_add_bike_title"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            android:text="Adicionando produto"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/toolbar_dropshadow"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/add_bike_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/bike_detail_description"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Nome"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTexts"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_bike_name"
+                        android:textColor="@color/colorTexts"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/bike_detail_description"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Descrição"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTexts"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_bike_description"
+                        android:textColor="@color/colorTexts"
+                        android:imeOptions="actionNext"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/bike_detail_description"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Preço"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTexts"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_bike_price"
+                        android:textColor="@color/colorTexts"
+                        android:imeOptions="actionNext"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/bike_detail_description"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Peso"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTexts"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_bike_weight"
+                        android:textColor="@color/colorTexts"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/bike_detail_description"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Cor"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTexts"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/add_bike_color"
+                        android:textColor="@color/colorTexts"
+                        android:imeOptions="actionNext"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_add_bike"
+            android:text="Salvar"
+            android:layout_below="@+id/add_bike_form"
+            android:textColor="@color/white"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+</LinearLayout>
